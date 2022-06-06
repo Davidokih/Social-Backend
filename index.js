@@ -1,7 +1,7 @@
 require('./utils/db');
 const express = require('express');
 const cors = require('cors');
-const port = 2222;
+const port = process.env.PORT || 2222;
 const app = express();
 
 app.use(cors());
