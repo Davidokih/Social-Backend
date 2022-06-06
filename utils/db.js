@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const url = 'mongodb+srv://Davidokih:dav517id@cluster0.1nweu.mongodb.net/socialBuild?retryWrites=true&w=majority';
+const url = process.env.URL;
 
 mongoose.connect(url).then(() => {
     console.log("connected to database");
